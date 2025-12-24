@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.text-style {
+    color: blue;
+    font-size: 18px;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.box {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 20px 0;
+}
+
+.hex-color { color: #ff5733; }
+.rgb-color { color: rgb(0, 128, 255); }
+.hsl-color { color: hsl(120, 60%, 40%); }
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link:hover {
+    color: red;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: black;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.profile-card {
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.flex-nav {
+    display: flex;
+    justify-content: space-around;
+    background: #eee;
+    padding: 10px;
+}
+
+.flex-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-top: 20px;
+}
+
+.sidebar {
+    background: #ddd;
+    padding: 10px;
+}
+
+.main-content {
+    background: #f5f5f5;
+    padding: 10px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery img {
+    width: calc(25% - 10px);
+}
+
+.animated-btn {
+    margin: 20px 0;
+    padding: 10px 20px;
+    transition: background-color 0.5s;
+}
+
+.animated-btn:hover {
+    background-color: lightblue;
+}
+
+.landing-grid {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    grid-template-columns: 30% 70%;
+    margin: 20px 0;
+}
+
+.landing-grid header { grid-area: header; background: #ccc; }
+.landing-grid aside { grid-area: sidebar; background: #ddd; }
+.landing-grid section { grid-area: main; background: #eee; }
+.landing-grid footer { grid-area: footer; background: #ccc; }
+
+.cards {
+    display: flex;
+    gap: 10px;
+}
+
+.card {
+    padding: 20px;
+    background: #e0e0e0;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background: white;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    h1, h2 {
+        font-size: 18px;
+    }
+
+    .gallery img {
+        width: calc(50% - 10px);
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+}
